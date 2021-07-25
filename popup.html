@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal</title>
+    <style>
+        body {
+            width: 125px;
+            border-radius: 5px;
+        }
+
+        .panel > .panel-title {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .panel > table {
+            padding: 0 .5rem;
+        }
+
+        .panel > table th {
+            text-align: left;
+        }
+
+        .panel > table td {
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="panel">
+        <span class="panel-title">Reveal Options</span>
+        <hr>
+        <table>
+            <tr>
+                <th>Hidden</th>
+                <td>
+                    <input type="checkbox" id="chk-hidden">
+                </td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input type="checkbox" id="chk-password">
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="./popup.js"></script>
+</body>
+</html>

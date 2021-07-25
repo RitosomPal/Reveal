@@ -1,0 +1,39 @@
+{
+    "name": "Reveal",
+    "description": "Reveal all hidden and password fields.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "./icons/logo_16.png",
+        "24": "./icons/logo_24.png",
+        "32": "./icons/logo_32.png",
+        "48": "./icons/logo_48.png",
+        "64": "./icons/logo_64.png",
+        "72": "./icons/logo_72.png",
+        "96": "./icons/logo_96.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icons": {
+            "16": "./icons/logo_16.png",
+            "24": "./icons/logo_24.png",
+            "32": "./icons/logo_32.png",
+            "48": "./icons/logo_48.png",
+            "64": "./icons/logo_64.png",
+            "72": "./icons/logo_72.png",
+            "96": "./icons/logo_96.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
